@@ -1,19 +1,17 @@
-
 /*
-* Universidad del Valle de Guatemala
-* Algoritmos y Estructuras de Datos
-* Ing. DOuglas Barrios
-* Miembros:
-* - Max de Leon 13012
-* - Javier Bucaro 13033
-* - Kuk Ho Chung 13279
-*/
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 
-package hdt8;
+/**
+ *
+ * @author Javier Bucaro
+ */
 
 import java.util.ArrayList;
 
-public class SimpleSet implements WordSet
+class SimpleSet implements WordSet
 {
 	private ArrayList<Word> base;
 	

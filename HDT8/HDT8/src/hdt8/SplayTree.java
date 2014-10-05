@@ -11,11 +11,11 @@ import java.util.ArrayList;
  *
  * @author Javier Bucaro
  */
-class RedBlackTree implements WordSet {
+class SplayTree implements WordSet {
 
-    	private ArrayList<Word> base;
+   	private ArrayList<Word> base;
 	
-	public RedBlackTree()
+	public SplayTree()
 	{
 		base = new ArrayList<Word>();
 	}
