@@ -1,4 +1,4 @@
-
+package hdt8;
 import java.util.Scanner;
 
 
@@ -13,7 +13,7 @@ import java.util.Scanner;
  *
  * @author Javier Bucaro
  */
-class WordSetFactory {
+public class WordSetFactory {
 	
 	// Metodo que genera un objeto que implementa WordSet
 	// parametro tipo: 1 = SimpleSet
@@ -22,6 +22,7 @@ class WordSetFactory {
 	//                         4 = implementado con Hash Table
 	//                         5 = implementado con TreeMap (de Java Collection Framework)
 	
+    
 	public static WordSet generateSet(int tipo)
 	{
 	    if (tipo == 1)
