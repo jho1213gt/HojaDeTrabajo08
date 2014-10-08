@@ -14,17 +14,22 @@ import java.util.Scanner;
  * @author Javier Bucaro
  */
 public class WordSetFactory {
-	
-	// Metodo que genera un objeto que implementa WordSet
-	// parametro tipo: 1 = SimpleSet
-	//                         2 = implementado con Red black tree
-	//                         3 = implementado con Splay Tree
-	//                         4 = implementado con Hash Table
-	//                         5 = implementado con TreeMap (de Java Collection Framework)
-	
-    
-	public static WordSet generateSet(int tipo)
-	{
+	public static WordSet generateSet(String tipo){
+            if(tipo.equals("SS"))
+                return new SimpleSet();
+            else if (tipo.equals("RBT"))
+                return new RedBlackTree();
+            else if (tipo.equals("ST"))
+                return new SplayTree();
+            else if (tipo.equals("HM"))
+                return new HashMap();
+            else if (tipo.equals("TM"))
+                return new TreeMap();
+            return null;
+        }
+        
+        /*
+        {
 	    if (tipo == 1)
 		    return new SimpleSet();
             if (tipo == 2)
@@ -42,5 +47,5 @@ public class WordSetFactory {
 			// if tipo == 5 cree una instancia para un Wordset implementado con TreeMap
             return new SimpleSet(); //nunca 
 	}
-	
+	*/
 }
