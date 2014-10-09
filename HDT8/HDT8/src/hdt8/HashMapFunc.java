@@ -1,10 +1,15 @@
 
 package hdt8;
 
-/**
- *
- * @author GNXN000000
- */
+/*
+* Universidad del Valle de Guatemala
+* Algoritmos y Estructuras de Datos
+* Ing. DOuglas Barrios
+* Miembros:
+* - Max de Leon 13012
+* - Javier Bucaro 13033
+* - Kuk Ho Chung 13279
+*/
 import java.util.HashMap;
 
 public class HashMapFunc implements WordSet{

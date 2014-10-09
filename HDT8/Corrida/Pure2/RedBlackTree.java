@@ -1,15 +1,15 @@
 
 
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- *
- * @author Javier Bucaro
- */
+* Universidad del Valle de Guatemala
+* Algoritmos y Estructuras de Datos
+* Ing. DOuglas Barrios
+* Miembros:
+* - Max de Leon 13012
+* - Javier Bucaro 13033
+* - Kuk Ho Chung 13279
+* Codigo de parte de: http://users.cis.fiu.edu/~weiss/dsaajava/code/DataStructures/RedBlackTree.java
+*/
 public class RedBlackTree {
         /**
          * Construct the tree.
@@ -19,7 +19,6 @@ public class RedBlackTree {
         public RedBlackTree(){
             
         }
-        
         public RedBlackTree( Comparable negInf )
         {
             header      = new RedBlackNode( negInf );
