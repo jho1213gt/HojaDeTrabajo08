@@ -1,7 +1,6 @@
 
 // http://users.cis.fiu.edu/~weiss/dsaajava/code/DataStructures/
    
-package hdt8;
 
 public     
 // Basic node stored in red-black trees

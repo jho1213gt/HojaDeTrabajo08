@@ -1,4 +1,4 @@
-package hdt8;
+
 public class WordSetFactory {
 	
 	// Metodo que genera un objeto que implementa WordSet
