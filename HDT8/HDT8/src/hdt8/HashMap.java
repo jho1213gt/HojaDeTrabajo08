@@ -4,24 +4,24 @@
  * and open the template in the editor.
  */
 package hdt8;
-/**
- *
- * @author Javier Bucaro
- */
+ 
+import java.util.*;
+
 public class HashMap implements WordSet{
-    private HashMap Map;
+    private HashMap<String, String> Map;
     
     public HashMap(){
         Map = new HashMap();
-    
     }
 
     public void add(Word wordObject) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+		Map.put(wordObject.getWord(), wordObject.getType());
     }
 
     public Word get(Word word) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+		if (!(Map.containsKey(word.getWord())))
+			return null;
+		return new Word(word.getWord(), Map.get(word.getWord()));
     }
     
     

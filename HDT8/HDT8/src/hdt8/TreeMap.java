@@ -4,21 +4,26 @@ package hdt8;
  * www.docjar.com/html/api/java/util/TreeMap.java.html
  * @author Javier Bucaro
  */
-public class TreeMap implements WordSet {
-        private TreeMap tree;
+
+import java.util.*;
+
+public class TreeMap implements WordSet{
+    
+    private TreeMap<String, String> Map;
     
     public TreeMap(){
-        tree = new TreeMap();
-    
+        Map = new TreeMap();
     }
 
     public void add(Word wordObject) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+		Map.put(wordObject.getWord(), wordObject.getType());
     }
 
     public Word get(Word word) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+		if (!(Map.containsKey(word.getWord())))
+			return null;
+		return new Word(word.getWord(), Map.get(word.getWord()));
     }
-
+    
     
 }

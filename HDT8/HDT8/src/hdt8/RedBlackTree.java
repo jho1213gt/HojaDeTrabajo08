@@ -11,28 +11,12 @@ import java.util.ArrayList;
  *
  * @author Javier Bucaro
  */
-class RedBlackTree implements WordSet {
-
-    	private ArrayList<Word> base;
-	
-	public RedBlackTree()
-	{
-		base = new ArrayList<Word>();
-	}
-	
-	public Word get(Word word)
-	{
-		int index = base.indexOf(word);
-		if(index == -1) return null;
-		return base.get(index);
-	}
-	
-	public void add(Word wordObject)
-	{
-		base.add(wordObject);
-	}
-
- public RedBlackTree( Comparable negInf )
+public class RedBlackTree implements WordSet{
+        /**
+         * Construct the tree.
+         * @param negInf a value less than or equal to all others.
+         */
+        public RedBlackTree( Comparable negInf )
         {
             header      = new RedBlackNode( negInf );
             header.left = header.right = nullNode;
@@ -261,6 +245,5 @@ class RedBlackTree implements WordSet {
         private static RedBlackNode current;
         private static RedBlackNode parent;
         private static RedBlackNode grand;
-        private static RedBlackNode great;        
-        
+        private static RedBlackNode great;
 }

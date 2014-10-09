@@ -3,12 +3,7 @@
    
 package hdt8;
 
-public     
-// Basic node stored in red-black trees
-    // Note that this class is not accessible outside
-    // of package DataStructures
-
-    class RedBlackNode
+public class RedBlackNode
     {
             // Constructors
         RedBlackNode( Comparable theElement )
