@@ -1,5 +1,4 @@
 package hdt8;
-import java.util.ArrayList;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -11,11 +10,15 @@ import java.util.ArrayList;
  *
  * @author Javier Bucaro
  */
-public class RedBlackTree implements WordSet{
+public class RedBlackTree {
         /**
          * Construct the tree.
          * @param negInf a value less than or equal to all others.
          */
+    
+        public RedBlackTree(){
+            
+        }
         public RedBlackTree( Comparable negInf )
         {
             header      = new RedBlackNode( negInf );

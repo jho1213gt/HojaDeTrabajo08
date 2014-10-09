@@ -13,13 +13,13 @@ public class WordSetFactory {
 	    if (tipo == 1)
 		    return new SimpleSet();
 	    if (tipo == 2)
-		    return new RedBlackTree();
+		    return new RedBlackCom();
 	    if (tipo == 3)
-		    return new SplayTree();
+		    return new SplayTreeNode();
 	    if (tipo == 4)
-		    return new HashMap();            
+		    return new HashMapFunc();            
 	    if (tipo == 5)
-		    return new TreeMap();            
+		    return new TreeMapFunc();            
             else
 		    // aqui se regresara el set empleando sus implementaciones:
 			// if tipo == 2 cree una instancia para un Wordset implementao con Red Black Tree

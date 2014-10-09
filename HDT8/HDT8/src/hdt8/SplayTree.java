@@ -1,8 +1,11 @@
 package hdt8;
-public class SplayTree implements WordSet{
+public class SplayTree{
         /**
          * Construct the tree.
          */
+        private static BinaryNode newNode = null;  // Used between different inserts
+        private static BinaryNode header = new BinaryNode( null ); // For splay                 
+    
         public SplayTree( )
         {
             root = nullNode;
@@ -256,8 +259,7 @@ public class SplayTree implements WordSet{
                 nullNode.left = nullNode.right = nullNode;
             }
         
-        private static BinaryNode newNode = null;  // Used between different inserts
-        private static BinaryNode header = new BinaryNode( null ); // For splay                 
+            
             
 }
             
