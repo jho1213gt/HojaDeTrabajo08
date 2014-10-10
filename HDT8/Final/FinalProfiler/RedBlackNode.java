@@ -1,4 +1,3 @@
-package hdt8;
 
 /*
 * Universidad del Valle de Guatemala

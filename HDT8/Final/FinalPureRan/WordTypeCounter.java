@@ -1,4 +1,4 @@
-package hdt8;
+
 /*
 * Universidad del Valle de Guatemala
 * Algoritmos y Estructuras de Datos
@@ -13,14 +13,14 @@ import java.io.*;
 class WordTypeCounter {
 	public static void main(String[] args) throws Exception
 	{
-	
+		if(args.length > 1)
 		{
 			// Declaración e inicialización de variables.
 			// el primer parametro indica el nombre del archivo con las definiciones de las palabras
-			File wordFile = new File("files//words.txt");
+			File wordFile = new File(args[0]);
 			
 			// el segundo parametro indica el nombre del archivo que tiene el texto a analizar
-			File textFile = new File("files//text.txt");
+			File textFile = new File(args[1]);
 			
 			// el tercer parametro sirve para seleccionar la implementacion que se usara para
 			// guardar el conjunto de palabras. Use el valor 1 para indicar que se empleara
@@ -30,7 +30,7 @@ class WordTypeCounter {
 			//  3 Splay Tree
 			//  4 Hash Table
 			//  5 TreeMap (de java collection framework)
-			int implementacion = 1;
+			int implementacion = Integer.parseInt(args[2]);
 			
 			BufferedReader wordreader;
 			BufferedReader textreader;
@@ -136,6 +136,10 @@ class WordTypeCounter {
 			{
 				System.out.println("No encuentro los archivos :'( ");
 			}
+		}
+		else
+		{
+			System.out.println("Faltan Parametros.");
 		}
 	}
 }
