@@ -11,22 +11,19 @@ package hdt8;
 * - Kuk Ho Chung 13279
 */
 public class RedBlackCom implements WordSet{
-	private RedBlackTree node;
-	
-	public RedBlackCom()
-	{
-		node = new RedBlackTree();
-	}
-	
-	public Word get(Word word)
-	{
-		Word dato = (Word)node.find(word);
-		return dato;
-	}
-	
-	public void add(Word wordObject)
-	{
-		node.insert(wordObject);
-	}
+    RedBlackTree arbol;
+    
+    public RedBlackCom(){
+        arbol = new RedBlackTree(new Word());
+    }
+    
+    public Word get(Word word){
+        Word temp;
+        temp =(Word) arbol.find(word);
+        return temp;
+    }
+    
+    public void add(Word word){
+        arbol.insert(word);
+    }
 }
-

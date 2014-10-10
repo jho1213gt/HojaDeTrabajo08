@@ -1,6 +1,7 @@
 
 package hdt8;
 
+import java.util.TreeMap;
 /*
 * Universidad del Valle de Guatemala
 * Algoritmos y Estructuras de Datos
@@ -10,8 +11,6 @@ package hdt8;
 * - Javier Bucaro 13033
 * - Kuk Ho Chung 13279
 */
-import java.util.TreeMap;
-
 public class TreeMapFunc implements WordSet{
 
     
@@ -32,4 +31,5 @@ public class TreeMapFunc implements WordSet{
     }    
     
 }
+
 

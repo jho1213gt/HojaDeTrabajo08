@@ -40,6 +40,4 @@ public class WordSetFactory {
 			
 		return null; // modificarlo para que regrese la implementacion seleccionada
 	}
-	
-	
 }

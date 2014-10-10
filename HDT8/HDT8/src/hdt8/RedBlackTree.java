@@ -8,17 +8,13 @@ package hdt8;
 * - Max de Leon 13012
 * - Javier Bucaro 13033
 * - Kuk Ho Chung 13279
-* Codigo de parte de: http://users.cis.fiu.edu/~weiss/dsaajava/code/DataStructures/RedBlackTree.java
 */
-public class RedBlackTree {
+public class RedBlackTree
+    {
         /**
          * Construct the tree.
          * @param negInf a value less than or equal to all others.
          */
-    
-        public RedBlackTree(){
-            
-        }
         public RedBlackTree( Comparable negInf )
         {
             header      = new RedBlackNode( negInf );
@@ -249,4 +245,7 @@ public class RedBlackTree {
         private static RedBlackNode parent;
         private static RedBlackNode grand;
         private static RedBlackNode great;
-}
+
+
+            
+    }

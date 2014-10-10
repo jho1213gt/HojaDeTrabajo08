@@ -1,3 +1,4 @@
+package hdt8;
 /*
 * Universidad del Valle de Guatemala
 * Algoritmos y Estructuras de Datos
@@ -7,14 +8,9 @@
 * - Javier Bucaro 13033
 * - Kuk Ho Chung 13279
 */
-package hdt8;
-/**
- *
- * @author Javier Bucaro
- */
-public interface WordSet{
+public interface WordSet {
 
-    public void add(Word wordObject);
-    public Word get(Word word);
+	public void add(Word wordObject);
+	public Word get(Word word);
 	
 }

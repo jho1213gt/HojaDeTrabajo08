@@ -14,12 +14,12 @@ package hdt8;
 public class BinaryNode
     {
             // Constructors
-        BinaryNode( Comparable theElement )
+        BinaryNode(Comparable theElement )
         {
             this( theElement, null, null );
         }
 
-        BinaryNode( Comparable theElement, BinaryNode lt, BinaryNode rt )
+        BinaryNode(Comparable theElement, BinaryNode lt, BinaryNode rt )
         {
             element  = theElement;
             left     = lt;
